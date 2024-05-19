@@ -13,3 +13,12 @@
     display: flex;
     flex-direction: column;
 }
+.card {
+    box-shadow: 1px 1px 10px 3px rgb(255, 140, 140);
+    margin: 20px;
+}
+.cardTrue{
+    box-shadow: 1px 1px 10px 3px rgb(140, 255, 146);
+    margin: 20px;
+}
+
