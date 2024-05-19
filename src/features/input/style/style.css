@@ -1,0 +1,15 @@
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; 
+}
+.cards{
+    margin: 10px;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/style.css"
 
 interface checkBox{
     initIsDone:boolean;
@@ -12,6 +13,6 @@ export default function checkIsDone({initIsDone}:checkBox) {
     }
 
     return(
-        <input type="checkbox" checked={isDone} onChange={changeCheckBox} />
+        <input className="checkBox" type="checkbox" checked={isDone} onChange={changeCheckBox} />
     )
 };
