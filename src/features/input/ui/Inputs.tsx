@@ -8,11 +8,11 @@ import Modal from "react-modal";
 import CheckBox from "./CheckBox";
 
 export default function Inputs() {
-    const [firstValue , setFirstValue] = useState("");
-    const [secondValue , setSecondValue] = useState("");
-    const [isDone , setIsDone] = useState(false);
+    const [firstValue , setFirstValue] = useState<string>("");
+    const [secondValue , setSecondValue] = useState<string>("");
+    const [isDone , setIsDone] = useState<boolean>(false);
     const [cards , setCards] = useState<interfaceForCard[]>([]);
-    const [modalIsOpen , setIsOpen] = useState(false);
+    const [modalIsOpen , setIsOpen] = useState<boolean>(false);
     const [currentEditIndex, setCurrentEditIndex] = useState<number | null>(null);
 
     const customStyles = {
