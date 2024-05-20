@@ -5,6 +5,7 @@ import CardForTodoList from "../../../entities/cards/ui/cardForTodoList";
 import Edit from "./Edit";
 import Delete from "./Delete";
 import Modal from "react-modal";
+import CheckBox from "./CheckBox";
 
 export default function Inputs() {
     const [firstValue , setFirstValue] = useState("");
@@ -60,11 +61,6 @@ export default function Inputs() {
     }
 
 
-    const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setIsDone(event.target.checked);
-
-    };
-
     return(
         <>
         <main>
@@ -80,7 +76,7 @@ export default function Inputs() {
                     <CardForTodoList 
                     firstValue={card.firstValue}
                     secondValue={card.secondValue} />
-                    <input type="checkbox" className={isDone ? "isDone" : ""} checked={isDone} onChange={handleCheckboxChange} />
+                    <CheckBox/>
                     <br />
                     <div className="btn">
                     <Edit onEdit={() => onEdit(index)} />
